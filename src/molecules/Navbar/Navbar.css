@@ -5,6 +5,7 @@
   justify-content: space-between;
   gap: 20px;
   align-items: center;
+  background-color: #a91d3a;
   padding: 30px;
 }
 
@@ -72,7 +73,6 @@
   .nav-items.open {
     display: flex; 
     flex-direction: column;
-    background-color:;
     padding: 5px;
     position: absolute;
     top: 8%;
