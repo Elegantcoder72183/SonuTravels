@@ -3,7 +3,9 @@
   height: 30px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   align-items: center;
+  background-color: #a91d3a;
   padding: 30px;
 }
 
@@ -19,11 +21,12 @@
   width: 800px;
   justify-content: space-between;
   padding-top: 8px;
+  z-index: 2;
 }
 
 .nav-items a {
   position: relative;
-  margin-right: 20px;
+  margin-right: 10px;
   text-decoration: none;
   color: white;
   font-weight: 400;
@@ -43,3 +46,52 @@
 .nav-items a:hover::after {
   width: 100%; /* Expand line on hover */
 }
+
+.hamburger-menu {
+  display: none; /* Hide by default */
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-items {
+  width: 550px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navbar{
+    height: 15px;
+  }
+  .nav-items {
+    display: none; /* Hide nav items by default */
+  }
+  
+  .hamburger-menu {
+    display: block; /* Show hamburger menu icon */
+    cursor: pointer;
+  }
+
+  .nav-items.open {
+    display: flex; 
+    flex-direction: column;
+    padding: 5px;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .nav-items a {
+    margin-top: 10px;
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 20px;
+    background-color: #A91D3A
+  }
+}
+

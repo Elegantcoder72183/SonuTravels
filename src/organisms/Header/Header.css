@@ -1,15 +1,108 @@
 .header-container {
-    position: relative;
-    width: full;
-    height: 900px; 
-    overflow: hidden;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+
+.header-video {
+  position: absolute;
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+}
+
+.video-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-heading {
+  font-size: 80px;
+  color: white;
+}
+
+.video-sub-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  font-weight: 300;
+  margin-top: 0px;
+  font-size: 20px;
+  color: black;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.video-sub-heading button {
+  background-color: brown;
+  width: 140px;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  color: wheat;
+}
+
+.form-container {
+  width: 1200px;
+  height: 150px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  opacity: 70%;
+  top: calc(50% + 150px);
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 2;
+}
+
+@media screen and (max-width: 1330px) {
   .header-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: -1; 
+    width: auto;
+    height: 750px;
   }
+}
+
+@media screen and (max-width: 1090px) {
+  .form-container {
+    width: 400px;
+    height: 350px;
+    top: calc(45%);
+  }
+
+  .header-container {
+    align-items: start;
+  }
+
+  .header-video {
+    width: auto;
+    height: 700px;
+  }
+
+  .video-content {
+    margin-top: 150px;
+  }
+
+  .video-heading {
+    font-size: 40px;
+  }
+
+  .video-sub-heading {
+    font-weight: 300;
+    margin-top: 0px;
+    font-size: 10px;
+  }
+
+  .video-sub-heading button {
+    font-size: 10px;
+    width: 60px;
+  }
+}
