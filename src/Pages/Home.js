@@ -4,6 +4,7 @@ import TopDestinations from '../molecules/TopDestinations'
 import Test from '../atoms/Test'
 import GoBeyoundImagination from '../molecules/GoBeyoundImagination'
 import ContactUsNow from '../atoms/ContactUsNow'
+import Footer from '../organisms/Footer'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <GoBeyoundImagination />
       <ContactUsNow />
       {/* <Test /> */}
+      <Footer/>
     </div>
   )
 }
