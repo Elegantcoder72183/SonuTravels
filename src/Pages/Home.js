@@ -1,14 +1,18 @@
 import React from 'react'
 import Header from '../organisms/Header'
-import PackagesForm from '../molecules/PackagesForm'
 import TopDestinations from '../molecules/TopDestinations'
+import Test from '../atoms/Test'
+import GoBeyoundImagination from '../molecules/GoBeyoundImagination'
+import ContactUsNow from '../atoms/ContactUsNow'
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <PackagesForm />
       <TopDestinations />
+      <GoBeyoundImagination />
+      <ContactUsNow />
+      {/* <Test /> */}
     </div>
   )
 }
