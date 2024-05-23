@@ -1,6 +1,6 @@
 .navbar {
   width: full;
-  height: 30px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
