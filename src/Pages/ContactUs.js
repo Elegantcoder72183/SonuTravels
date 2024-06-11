@@ -5,7 +5,10 @@ const ContactUs = () => {
   return (
     <div >
       <Navbar />
-      This is Contact Us Page
+      <div className="mb-24">
+        <img src="/images/contact-us-bg.jpg" alt="Contact Us background Image" className="h-screen w-full" />
+        <p className="text-center">This is Contact Us Page</p>
+      </div>
     </div>
   );
 };

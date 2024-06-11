@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ContactUsNow = () => {
   return (
-    <div className="bg-white my-8">
+    <div className="bg-white mt-8">
       <div className="flex justify-between px-24 py-10 max-md:flex-col">
         <div className="flex max-md:flex-col">
           <img
@@ -25,6 +25,7 @@ const ContactUsNow = () => {
           </Link>
         </div>
       </div>
+      <hr />
     </div>
   );
 };

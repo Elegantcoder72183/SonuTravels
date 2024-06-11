@@ -5,7 +5,10 @@ const AboutUs = () => {
   return (
     <div >
       <Navbar />
-      This is About Page
+      <div  className="mb-24">
+        <img src="/images/about-us-bg.jpg" alt="About Us background Image" className="h-screen w-full" />
+        <p className="text-center">This is About Us Page</p>
+      </div>
     </div>
   );
 };

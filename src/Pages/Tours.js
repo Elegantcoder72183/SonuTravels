@@ -5,7 +5,10 @@ const Tours = () => {
   return (
     <div>
       <Navbar />
-      This is our Tours Page
+      <div  className="mb-24">
+        <img src="/images/tours-bg.jpg" alt="Tours background Image" className="h-screen w-full" />
+        <p className="text-center">This is Tours Page</p>
+      </div>
     </div>
   );
 };
