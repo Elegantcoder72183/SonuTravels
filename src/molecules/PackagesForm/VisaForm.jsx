@@ -57,7 +57,7 @@ const VisaForm = () => {
               <br />
               <input
                 type="text"
-                placeholder="Enter City Name"
+                placeholder="Enter Country"
                 className="bg-[#a91d3a] w-36 max-xl:w-full pt-1 border-b-[1px] text-white placeholder-white focus:outline-none focus:border-transparent"
                 value={selectedVisaApplicationCountry}
                 onChange={(e) =>
@@ -86,7 +86,7 @@ const VisaForm = () => {
               <br />
               <input
                 type="text"
-                placeholder="Enter City Name"
+                placeholder="Enter Country"
                 className="bg-[#a91d3a] pt-1 w-36  max-xl:w-full border-b-[1px] text-white placeholder-white focus:outline-none focus:border-transparent"
                 value={selectedYourCountry}
                 onChange={(e) => setSelectedYourCountry(e.target.value)}

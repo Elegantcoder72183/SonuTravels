@@ -5,7 +5,10 @@ const Flights = () => {
   return (
     <div>
       <Navbar />
-      This is Flights Page
+      <div  className="mb-24" >
+        <img src="/images/flights-bg.jpg" alt="Flights background Image" className="h-screen w-full" />
+        <p className="text-center">This is Flight's Page</p>
+      </div>
     </div>
   );
 };
